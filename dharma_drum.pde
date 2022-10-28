@@ -8,14 +8,15 @@ float bounds = 300;
 boolean on = true;
 
 void setup() {
-  size(500, 500, P3D);
-
+  size(1000, 750, P3D);
+  frameRate(24);
  
 }
 
 void draw() {
   float rf = random(140);
   background(random(255), random(255), random(255));
+  
   //lights();
 
   // Center in display window
