@@ -1,9 +1,6 @@
-// 20 little internal cubes
-//Cube[] cubies = new Cube[100]; 
 
 boolean recording = false;
 
-// Size of outer cube
 float bounds = 300;
 boolean on = true;
 
@@ -17,8 +14,6 @@ void draw() {
   float rf = random(140);
   background(random(255), random(255), random(255));
   
-  //lights();
-
   // Center in display window
   translate(width/2, height/2, -130);
 
@@ -64,21 +59,11 @@ void draw() {
     }
     if(recording) {
    saveFrame("frame2/1stcut_####.png");
-  }
+    }
     
   }
   //rotateZ(frameCount *.04);
 
-  //translate(mouseX, mouseY);
-  // Outer transparent cube, just using box() method
-  //noFill(); 
-  //box(bounds);
-
-  // Move and rotate cubies
-  //for (Cube c : cubies) {
-  //c.update();
-  //c.display();
-  //}
 }
 
 void keyPressed() {
